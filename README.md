@@ -4,14 +4,14 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
 
 ## Result
  - [main page](https://jin959.github.io/wanted_clone/)
-    * [html src](https://github.com/Jin959/wanted_clone/index.html)
-    * [css src](https://github.com/Jin959/wanted_clone/css/style.css)
+    * [html src](https://github.com/Jin959/wanted_clone/blob/master/index.html)
+    * [css src](https://github.com/Jin959/wanted_clone/blob/master/css/style.css)
 
  - recruite page : 아직이요
 ----------------------------
 ## Layout
 
- - ![레이아웃 설계 이미지 불러오](https://github.com/Jin959/wanted_clone/img/layout.bmp)   
+ - ![레이아웃 설계 이미지 불러오](https://github.com/Jin959/wanted_clone/blob/master/img/layout.bmp)   
   
  - section1에서 안팍으로 움직이는 div가 하나 있는데 추후에 생각하기로 했다.
 
@@ -76,7 +76,7 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
         height: 265px;
     }
     ```
-    ![레이아웃 설계 이미지 불러오](https://github.com/Jin959/wanted_clone/img/layout2.bmp) 
+    ![레이아웃 설계 이미지 불러오](https://github.com/Jin959/wanted_clone/blob/master/img/layout2.png) 
 
 -------------------------------
 ## HTML
