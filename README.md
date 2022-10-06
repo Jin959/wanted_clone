@@ -5,10 +5,13 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
 ## Result
  - [main page](https://jin959.github.io/wanted_clone/)
     * [html src](https://github.com/Jin959/wanted_clone/blob/master/index.html)
-    * [css src](https://github.com/Jin959/wanted_clone/blob/master/css/style.css)
-
- - recruite page : 아직이요
-----------------------------
+    * [css src](https://github.com/Jin959/wanted_clone/blob/master/css/style.css)  
+      
+  
+ - recruite page : 아직이요  
+   
+----------------------------  
+  
 ## Layout
 
  - ![레이아웃 설계 이미지 불러오](https://github.com/Jin959/wanted_clone/blob/master/img/layout.bmp)   
@@ -17,7 +20,8 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
 
  - [에릭 마이어의 CSS Reset](https://meyerweb.com/eric/tools/css/reset/)을 사용하여 초기화 한다.  
 
- - 다음과 같이 일단 구획을 나누었다. 이후 세부 구획으로 다시 나눈다.
+ - 다음과 같이 일단 구획을 나누었다. 이후 세부 구획으로 다시 나눈다.  
+   
     ```HTML
     <!DOCTYPE html>
     <html lang="ko">
@@ -48,7 +52,8 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
         </div>
     </body>
     </html>
-    ```
+    ```  
+      
     ```CSS
     /* begin */
     body
@@ -89,7 +94,8 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
         </svg>
         ```
 
--------------------------------
+-------------------------------  
+  
 ## CSS
 
  - ```<div>```와 같은 블록요소는 ```{marine: 0px auto}```를 사용하면 가로정렬을 손쉽게 할 수 있다.
@@ -119,7 +125,8 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
 
  - 마우스가 navigation bar 메뉴에 hover 될때 밑 줄 표시
 
-----------------------------------
+----------------------------------  
+  
 ## JS
 
  
