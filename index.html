@@ -5,32 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원티드 - 나다운 클론의 시작</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/nav_style.css">
+    <link rel="stylesheet" href="css/mian_style.css">
+    <link rel="stylesheet" href="css/footer_style.css">
     <link rel="icon" href="https://static.wanted.co.kr/favicon/favicon.ico">
 </head>
 <body>
     <div class="nav_container">
         <nav>
             <div class="nav_left">
-                <button id="menu">
+                <button id="menu" type="button" onpointerenter="alert('onpointerenter')";>
                     <img
                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=undefined&q=75"
-                     alt="img">
+                     alt="❓">
                 </button>
                 <div id="home">
-                    <img
-                     src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Flogo_wanted_black.png&w=110&q=100"
-                     alt="img">
+                    <a href="#none">
+                        <img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Flogo_wanted_black.png&w=110&q=100"
+                        alt="❓">
+                    </a>
                 </div>
             </div>
             <div class="nav_center">
-                <div>채용</div>
-                <div>이벤트</div>
-                <div>직군별 연봉</div>
-                <div>이력서</div>
-                <div>커뮤니티<em>New</em></div>
-                <div>프리랜서</div>
-                <div>AI 합격예측<em>Beta</em></div>
+                <div><a href="#none">채용</a></div>
+                <div><a href="#none">이벤트</a></div>
+                <div><a href="#none">직군별 연봉</a></div>
+                <div><a href="#none">이력서</a></div>
+                <div><a href="#none">커뮤니티</a><em>New</em></div>
+                <div><a href="#none">프리랜서</a></div>
+                <div><a href="#none">AI 합격예측</a><em>Beta</em></div>
             </div>
             <div class="nav_right">
                 <div>
@@ -46,15 +51,33 @@
         </nav>
     </div>
     <main>
-        <section id="top_banner">top banner</section>
+        <section id="top_banner">
+            <button type="button" onclick="alert('이전')"><</button>
+            <button type="button" onclick="alert('다음')">></button>
+            <div>
+                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" alt="❌">
+            </div>
+            <div>
+                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1825%2Fb93ecf4e.jpg&w=1060&q=100" alt="❌">
+            </div>
+            <div>
+                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" alt="❌">
+            </div>
+            <div>
+                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1835%2F487d8bb0.jpg&w=1060&q=100" alt="❌">
+            </div>
+            <div>
+                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" alt="❌">
+            </div>
+        </section>
         <!--<div></div>-->
-        <section id="section1">1</section>
-        <section id="section2">2</section>
-        <section id="section3">3</section>
-        <section id="section4">4</section>
-        <section id="section5">5</section>
-        <section id="section6">6</section>
-        <section id="section7">7</section>
+        <section id="section1">섹션1</section>
+        <section id="section2">섹션2</section>
+        <section id="section3">섹션3</section>
+        <section id="section4">섹션4 (라인 배너)</section>
+        <section id="section5">섹션5</section>
+        <section id="section6">섹션6</section>
+        <section id="section7">섹션7</section>
     </main>
     <div class="footer_container">
         <footer>footer</footer>

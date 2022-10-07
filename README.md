@@ -86,13 +86,15 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
 -------------------------------
 ## HTML
 
-- ```<svg>```를 사용해 보았는데 원티드 홈페이지에는 일단 필요없는 태그나 CSS property들이 많이 들어있어 다른 사이트의 svg를 참고하여 구현했다.
-    * ```HTML
-        <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18">
-            <path d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z">
-            </path>
-        </svg>
-        ```
+### > navigation bar의 ```<svg>``` 이미지 태그  
+
+```<svg>```를 사용해 보았는데 원티드 홈페이지에는 일단 필요없는 태그나 CSS property들이 많이 들어있어 다른 사이트(구글 검색창)의 svg를 참고하여 구현했다.
+```HTML
+<svg xmlns="https://www.w3.org/2000/svg" width="18" height="18">
+    <path d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z">
+    </path>
+</svg>
+```
 
 -------------------------------  
   
@@ -101,18 +103,20 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
  - ```<div>```와 같은 블록요소는 ```{marine: 0px auto}```를 사용하면 가로정렬을 손쉽게 할 수 있다.
     * 세로 정렬은 flex를 이용한다.  
 
- - navigation bar의 wanted 글자 로고인 home 버튼 이미지 링크가 개발자 도구에 없어서 다음과 같이 ```position``` property를 사용하여 유사 로고를 잘라서 사용했다.
+### > ```<img>``` 자르기
+ - navigation bar의 wanted 글자 로고인 home 버튼 이미지 링크가 개발자 도구에 없어서 이미지 파일을 사용하려고 했지만 나중에 다음과 같이 ```position``` property를 사용하여 '개발자 옵션'에 소스가 있는 로고를 잘라서 사용했다.
     * ```CSS
         #home
         {
-            position: relative;
-            overflow: hidden;
+            position: relative; // <img>의 absolute의 기준 설정
+            overflow: hidden; // 넘어가면 지운다.
             width: 74.38px;
         }
 
         #home img
         {
-            position: absolute;
+            // absolute는 relative가 있는 조상 기준으로 이동한다.
+            position: absolute; 
             top: -50%;
             left: -55%;
 
@@ -121,7 +125,11 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
         }
         ```
   
- - navigation bar가 따라다니는 것을 볼 수 있는데 아직 안해봤다. 모르겠다.
+### > navigation bar fixing
+
+ - ```{ position: fixed; }```를 사용하여 고정했다.  
+
+### > navigation bar에 밑줄 긋기
 
  - 마우스가 navigation bar 메뉴에 hover 될때 밑 줄 표시
 
@@ -129,4 +137,22 @@ workspace for cloning [wanted](https://www.wanted.co.kr/) website, [recruite pag
   
 ## JS
 
- 
+### > top_banner의 슬라이딩 구현  
+  
+ - 
+
+
+
+
+
+--------------------------------
+
+## References
+
+ - [poiemaweb - CSS transform](https://poiemaweb.com/css3-transform)
+
+ - [MDN - HTML element](https://developer.mozilla.org/ko/docs/Web/HTML/Element/a)
+
+ - [MDN - CSS Property](https://developer.mozilla.org/ko/docs/Web/CSS/animation)
+
+ - [MDN - Web API](https://developer.mozilla.org/ko/docs/Web/API)

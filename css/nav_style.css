@@ -1,0 +1,101 @@
+/* navigation bar , header */
+
+.nav_container
+{
+    position: fixed;
+    background-color: white;
+
+    margin: 0 auto;
+    width: 100vw;
+    height: 50px;
+    border-bottom: 1px solid rgb(225, 225, 225);;
+    z-index: 1000;
+}
+
+nav
+{
+    width: 1060px;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div
+{
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_left > *
+{
+    display: flex;
+    height: 20.8px;
+    border: 0px;
+}
+
+#menu
+{
+    background-color: white;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+#menu img
+{
+    width: 17px;
+    height: 14px;
+}
+
+#home
+{
+    position: relative;
+    overflow: hidden;
+    width: 74.38px;
+}
+
+#home img
+{
+    position: absolute;
+    top: -50%;
+    left: -55%;
+
+    height: 200%;
+    width: 150%;
+}
+
+.nav_center
+{
+    width: 532.5px;
+}
+
+.nav_center em
+{
+    position: absolute;
+    top: 5px;
+    font-size: 7px;
+    font-weight: lighter;
+    color: rgb(20, 153, 210)
+}
+
+.nav_right
+{
+    width: 275.74px;
+}
+
+.nav_right > div:nth-child(1)
+{
+    color: rgb(225, 225, 225);
+}
+
+.nav_right > div:last-child
+{
+    padding: 5px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 20px;
+    color: rgb(137, 137, 137);
+}
+
+
