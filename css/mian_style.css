@@ -31,6 +31,9 @@ main section
 {
     width: 1060;
     padding: 0 12px;
+    /*
+    transition: 0.3s linear;  /*testing
+    */
 }
 
 #top_banner img
@@ -40,7 +43,6 @@ main section
 
 #top_banner > button
 {
-    
     position: absolute;
     
     background-color: rgb(250, 250, 250);
@@ -54,17 +56,40 @@ main section
     z-index: 10;
 }
 
-#top_banner > button:first-child
+#prev_btn
 {
     right: 90%;
 }
 
-#top_banner > button:nth-child(2)
+#nxt_btn
 {
     left: 90%;
 }
 
-
+.sliding_nxt
+{
+    transition: 0.3s linear;
+    transform: translate(100%, 0);
+}
+/*
+.sliding_nxt_reverse
+{
+    transition: transform 0s linear;
+    transform: translate(-100%, 0);
+}
+*/
+.sliding_prev
+{
+    transition: transform 0.3s linear;
+    transform: translate(-100%, 0);
+}
+/*
+.sliding_prev_reverse
+{
+    transition: transform 0s linear;
+    transform: translate(100%, 0);
+}
+*/
 
 
 
