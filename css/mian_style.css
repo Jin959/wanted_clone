@@ -6,9 +6,149 @@ main
 
 main section
 {
-    border: 1px solid rgb(225, 225, 225);
+    /*border: 1px solid rgb(225, 225, 225);*/
 }
 
+.section
+{
+    position: relative;   
+    display: flex;
+    justify-content: center;
+}
+.section_wrapper
+{
+    position: relative;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1060px;
+    width: 87.72%;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+/*  section 7 8   */
+.horizon_wrapper
+{
+    position: relative;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1060px;
+    width: 87.72%;
+}
+
+.section_title
+{
+    margin-left: 5px;
+    height: 30.2px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+
+    text-align: center;
+}
+
+.section_title a
+{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* section 3, 4, 6 */
+.section_nav
+{
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    height: 50;
+}
+.section_nav button
+{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+.section_nav button:hover
+{
+    background-color: rgb(225, 225, 225);
+}
+
+.section_nav svg
+{
+    width: 1em;
+    height: 1em;
+    color: #333;
+}
+
+/* section 3, 4  */
+.section_content
+{
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_content a
+{
+    width: 250px;
+}
+
+
+
+/*section 2, 3, 4 img_wrapper*/
+.item_link_img_wrapper
+{
+    display: flex;
+    justify-content: center;
+
+    width: 250px;
+    height: 175px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item_link_img_wrapper > img
+{
+    object-fit: cover;
+}
+
+.contents_title
+{
+    width: 250px;
+    color: #333;
+    font-size: 16px;
+    padding-top: 17px;
+    padding-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.contents_subtitle
+{
+    width: 250px;
+    height: 30px;
+    padding: 10px 0px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+
+    letter-spacing: -1px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 /*------------top banner-----------*/
@@ -17,6 +157,7 @@ main section
 {
     /* 버튼의 absolute 포지션을 위해 relative*/
     position: relative;
+    overflow: hidden;
 
     padding-top: 25px;
     height: 304.7;
@@ -71,6 +212,7 @@ main section
     transition: 0.3s linear;
     transform: translate(100%, 0);
 }
+
 /*
 .sliding_nxt_reverse
 {
@@ -78,11 +220,13 @@ main section
     transform: translate(-100%, 0);
 }
 */
+
 .sliding_prev
 {
     transition: transform 0.3s linear;
     transform: translate(-100%, 0);
 }
+
 /*
 .sliding_prev_reverse
 {
@@ -93,17 +237,227 @@ main section
 
 
 
+/************ section2 *****************/
 
-#section1
+#section2 div.section_title
 {
-    height: 1040.7px;
+    display: flex;
 }
 
+#section2 div.section_title button
+{
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    padding: 0px;
+}
 
+.scroll
+{
+    display: flex;
+    gap: 8px;
+    grid-gap: 8px;
+    padding: 30px 0;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
 
+.scroll::-webkit-scrollbar{
+    display:none;
+}
 
+.scroll button
+{
+    flex-shrink: 0;
 
-#section2
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 9px 22px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 30px;
+}
+
+.scroll button:hover
+{
+    background-color: rgb(225, 225, 225);
+}
+
+#scroll_nxt_btn
+{
+    position: absolute;
+    top: 120px;
+    left: 960px;
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+#scroll_nxt_btn svg
+{
+    width: 1em;
+    height: 1em;
+    color: #333;
+}
+
+#scroll_toggle_btn
+{
+    position: absolute;
+    top: 120px;
+    left: 1010px;
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+.grid_container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 308px);
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+ .grid_container a
+{
+    display: block;
+    width: 250px;
+    height: 308px;
+    color: #aaa;
+}
+
+.grid_author
+{
+    display: flex;
+    align-items: center;
+
+    width: 250px;
+    height: 30px;
+    padding: 20px 0px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.grid_author p
+{
+    margin-left: 10px;
+    letter-spacing: -1px;
+}
+
+.grid_author img
+{
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+}
+
+.section2_more_btn
+{
+    
+    padding-top: 60px;
+}
+
+.section2_more_btn button
+{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 30px;
+    padding: 15px 100px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section2_more_btn svg
+{
+    width: 16px;
+    height: 16px;
+}
+
+#section2 > aside
+{
+    box-sizing: border-box;
+    position: absolute;
+    top: 10%;
+    left: 86%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 150px;
+    height: 188.25px;
+    border: 1px solid rgb(225, 225, 225);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+
+    text-align: center;
+}
+
+#section2 > aside img
+{
+    width: 62px;
+    height: 42.63px;
+}
+
+#section2 > aside button
+{
+    background-color: white;
+    border: 0px;
+    font-size: 18px;
+    color: rgb(225, 225, 225);
+}
+
+#section2 > aside > div:first-child
+{
+    position: relative;
+}
+
+#section2 > aside div:first-child button
+{
+    position: absolute;
+    left: 120%;
+}
+
+#section2 > aside div:nth-child(2)
+{
+    line-height: 130%;
+}
+
+#section2 > aside hr
+{
+    width: 110px;
+    border: 1px solid rgb(225, 225, 225);
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+#section2 > aside div:last-child a
+{
+    color: #002fdb;
+    font-size: 11px;
+}
+
+#section2 > aside div:last-child a svg
+{
+    width: 12px;
+    height: 12px;
+}
+
+/************** section3 *****************/
+
+#section3
 {
     height: 482.94px;
 }
@@ -111,44 +465,187 @@ main section
 
 
 
+/************** section4 *****************/
 
-#section3
+#section4
 {
     height: 504.94px;
 }
 
+#section4 div.section_wrapper
+{
+    border-bottom: 0px;
+}
 
 
+/************** section5 *****************/
 
-
-#section4
+#section5
 {
     height: 64.4px;
 }
 
+#section5 a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1060px;
+    font-size: 16px;
+    border-radius: 50px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#02a6fe+-12,2f5cef+49,0464fe+82,5fd2d8+100 */
+    background: rgb(2,166,254); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgb(2,166,254) -12%, rgb(47,92,239) 49%, rgb(4,100,254) 82%, rgb(95,210,216) 110%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgb(2,166,254) -12%,rgb(47,92,239) 49%,rgb(4,100,254) 82%,rgb(95,210,216) 110%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgb(2,166,254) -12%,rgb(47,92,239) 49%,rgb(4,100,254) 82%,rgb(95,210,216) 110%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02a6fe', endColorstr='#5fd2d8',GradientType=1 ); /* IE6-9 */
+}
+
+#section5 div
+{
+    color: rgb(250, 250, 250);
+}
+
+#section5 svg
+{
+    fill:rgb(250, 250, 250);
+}
 
 
 
+/************** section6 *****************/
 
-#section5
+#section6
 {
     height: 569.94px;
 }
 
-
-
-
-
-#section6
+#section5 div.section_wrapper
 {
-    height: 278px;
+    border-bottom: 0px;
+}
+
+#section6 div.item_link_img_wrapper
+{
+    width: 522px;
+    height: 273px;
+}
+
+#section6 div.section_content a
+{
+    width: 522px;
+}
+
+div.item_stat
+{
+    margin-top: 12px;
+    height: 20px;
+}
+
+.item_stat span
+{
+    font-size: 11px;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+#section6 p.contents_title
+{
+    width: 522px;
+}
+
+#section6 p.contents_subtitle
+{
+    width: 522px;
+    height: 20px;
+    padding: 0px;
 }
 
 
 
-
+/************** section7 *****************/
 
 #section7
 {
+    height: 278px;
+    background-color: #f7f7f7;
+}
+
+#section7 > div > div:first-child
+{
+    width: 515.17px;
+    height: 137.85px;
+}
+
+#section7 > div > div:first-child div
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    height: 42.85px;
+}
+
+#section7 > div > div:first-child p
+{
+    font-size: 13px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 1.4;
+    letter-spacing: -1px;
+}
+
+#section7 > div > div:first-child a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #36f;;
+    color: white;
+
+    width: 206px;
+    height: 50px;
+    
+    margin-top: 25px;
+    padding: 0px 27px;
+    border-radius: 50px;
+}
+
+#section7 > div > div:last-child
+{
+    display: flex;
+    justify-content: center;
+
+    width: 544.83px;
+    height: 158px;
+    overflow: hidden;
+}
+
+#section7 > div > div:last-child > img
+{
+    object-fit: cover;
+}
+
+
+/************** section8 *****************/
+
+#section8
+{
     height: 301.25px;
+}
+
+#section8 div.horizon_wrapper a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    height: 88.5px;
+    text-align: center;
+    
+    font-size: 16px;
+    
+    border: 1px solid #ececec;
 }

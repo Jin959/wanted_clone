@@ -1,0 +1,103 @@
+header
+{
+    display: flex;
+    justify-content: center;
+}
+
+header .vertical_wrapper
+{
+    height: 133px;
+    justify-content: center;
+}
+
+header .horizontal_wrapper
+{
+    width: 100%;
+    justify-content: space-between;
+}
+
+header div.horizontal_wrapper button
+{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+header div.horizontal_wrapper button > span:nth-child(2)
+{
+    color: #36f;
+    font-weight: 600;
+    margin: 0 5px;
+
+    
+}
+
+header hr
+{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid rgb(225, 225, 225);
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+.horizontal_scroll
+{
+    display: flex;
+    gap: 8px;
+    grid-gap: 8px;
+    
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
+
+.horizontal_scroll::-webkit-scrollbar{
+    display:none;
+}
+
+.horizontal_scroll button
+{
+    flex-shrink: 0;
+
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 22px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 30px;
+}
+
+.horizontal_scroll button:hover
+{
+    background-color: rgb(225, 225, 225);
+}
+
+.horizontal_scroll img
+{
+    width: 14px;
+    height: 14px;
+}
+
+#scroll_nxt_btn
+{
+    position: absolute;
+    top: 70%;
+    left: 98%;
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+#scroll_nxt_btn svg
+{
+    width: 1em;
+    height: 1em;
+    color: #333;
+}
+

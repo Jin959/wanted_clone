@@ -1,0 +1,60 @@
+#category
+{
+    display: flex;
+    justify-content: center;
+}
+
+#category .horizontal_wrapper
+{
+    margin-top: 60px;
+    padding: 30px 0;
+    height: 40px;
+}
+
+#category .horizontal_wrapper > div
+{
+    font-size: 24px;
+    line-height: 29px;
+    
+    color:rgb(225, 225, 225);
+    padding: 10px;
+}
+
+#cate_first
+{
+    background-color: white;
+    border: 0px;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#cate_first span:last-child
+{
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    padding: 0px 8px;
+    margin: 5px;
+}
+
+#cate_second
+{
+    background-color: white;
+    border: 0px;
+
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#cate_second span:last-child
+{
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    padding: 0px 8px;
+    margin: 5px;
+}
+
+#category button span:last-child:hover
+{
+    border-color: rgb(51, 51, 51);
+}

@@ -1,0 +1,149 @@
+/*------------ main common --------------*/
+main
+{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(225, 225, 225);
+
+    padding-top: 30px;
+}
+
+
+
+/*---- title ------*/
+
+#main_title div:first-child
+{
+    padding: 10px 0;
+    color: #36f;
+}
+
+#main_title div:last-child
+{
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+/*---- flex-container ------*/
+
+#flex_link a
+{
+    position: relative;
+
+    margin-right: 15px;
+    display: block;
+
+    width: 80%;
+    height: 271px;
+
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+
+
+.flex_img_wrapper
+{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 147px;
+    overflow: hidden;
+}
+
+.flex_img_wrapper > img
+{
+    object-fit: cover;
+    transition: all 2s;
+}
+
+#flex_link a:hover div.flex_img_wrapper > img
+{
+    transition: transform 0.3s linear;
+    transform: scale(1.1);
+}
+
+.logo_wrapper
+{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+
+    display: flex;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+
+    background-color: white;
+    border: 1px solid rgb(225, 225, 225)
+}
+
+.flex_body
+{
+    padding: 20px 0;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+
+.flex_body h5
+{
+    color: #aaa;
+    font-size: 14px;
+}
+
+/*---- grid-container ------*/
+
+
+#grid_link
+{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 343.7px);
+    row-gap: 50px;
+    column-gap: 20px;
+
+    margin-top: 20px;
+}
+
+ #grid_link a
+{
+    display: block;
+    width: 250px;
+    
+    color: #aaa;
+}
+
+.grid_img_wrapper
+{
+    display: flex;
+    justify-content: center;
+
+    width: 250px;
+    height: 187.5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid_img_wrapper > img
+{
+    object-fit: cover;
+}
+
+
+.grid_body
+{
+    width: 250px;
+    height: 30px;
+    padding: 20px 0px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+
+
