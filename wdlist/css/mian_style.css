@@ -57,7 +57,7 @@ main
 .flex_img_wrapper > img
 {
     object-fit: cover;
-    transition: all 2s;
+    transition: all 0.3s;
 }
 
 #flex_link a:hover div.flex_img_wrapper > img
