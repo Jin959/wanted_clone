@@ -8,6 +8,8 @@ header .vertical_wrapper
 {
     height: 133px;
     justify-content: center;
+
+    margin-bottom: 15px;
 }
 
 header .horizontal_wrapper
@@ -16,21 +18,48 @@ header .horizontal_wrapper
     justify-content: space-between;
 }
 
-header div.horizontal_wrapper button
+header .horizontal_wrapper > div
 {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(225, 225, 225);
-    border-radius: 5px;
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: space-between;
 }
 
-header div.horizontal_wrapper button > span:nth-child(2)
+header div.horizontal_wrapper button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    padding: 10px 10px;
+
+    cursor: pointer;
+}
+
+header .horizontal_wrapper > div:first-child button:hover
+{
+    background-color: rgb(245, 245, 248);
+}
+
+header div.horizontal_wrapper button > div
+{
+    margin-right: 7px;
+}
+
+header div.horizontal_wrapper button > div:nth-child(1)
+{
+    margin-right: 7px;
+}
+
+header div.horizontal_wrapper button > div:nth-child(2)
 {
     color: #36f;
     font-weight: 600;
-    margin: 0 5px;
-
-    
 }
 
 header hr
@@ -48,6 +77,8 @@ header hr
     display: flex;
     gap: 8px;
     grid-gap: 8px;
+
+    padding: 5px 0;
     
     overflow-x: scroll;
     -ms-overflow-style: none;
@@ -70,7 +101,7 @@ header hr
 
 .horizontal_scroll button:hover
 {
-    background-color: rgb(225, 225, 225);
+    border: 1px solid rgba(51,102,255,.3);
 }
 
 .horizontal_scroll img
@@ -79,13 +110,16 @@ header hr
     height: 14px;
 }
 
-#scroll_nxt_btn
+#scroll_prev_btn
 {
     position: absolute;
     top: 70%;
-    left: 98%;
+    left: 0;
 
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid rgb(225, 225, 225);
     border-radius: 50%;
     width: 30px;
@@ -93,6 +127,33 @@ header hr
 
     cursor: pointer;
 }
+
+#scroll_prev_btn svg
+{
+    width: 1em;
+    height: 1em;
+    color: #333;
+}
+
+
+#scroll_nxt_btn
+{
+    position: absolute;
+    top: 70%;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
 
 #scroll_nxt_btn svg
 {

@@ -6,8 +6,8 @@
 
 #category .horizontal_wrapper
 {
-    margin-top: 60px;
-    padding: 30px 0;
+    margin-top: 70px;
+    padding: 20px 0;
     height: 40px;
 }
 
@@ -17,10 +17,15 @@
     line-height: 29px;
     
     color:rgb(225, 225, 225);
-    padding: 10px;
 }
 
-#cate_first
+#category .horizontal_wrapper > div:nth-child(2)
+{
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+#category_first
 {
     background-color: white;
     border: 0px;
@@ -29,7 +34,7 @@
     font-weight: 700;
 }
 
-#cate_first span:last-child
+#category_first span:last-child
 {
     border: 1px solid rgb(225, 225, 225);
     border-radius: 50%;
@@ -37,7 +42,7 @@
     margin: 5px;
 }
 
-#cate_second
+#category_second
 {
     background-color: white;
     border: 0px;
@@ -46,7 +51,7 @@
     font-weight: normal;
 }
 
-#cate_second span:last-child
+#category_second span:last-child
 {
     border: 1px solid rgb(225, 225, 225);
     border-radius: 50%;
