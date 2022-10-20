@@ -1,0 +1,348 @@
+.modal_login, .modal_regi
+{
+    position: absolute;
+    backdrop-filter: brightness(60%);
+    width: 100vw;
+    height: 100vh;
+    z-index: 654;
+}
+
+.modal_login input, .modal_regi input
+{
+    width: 100%;
+    height: 50px;
+}
+
+.modal_wrapper
+{
+    position: relative;
+
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
+    z-index: 655;
+
+    height: calc(100vh - 100px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+
+    color: #888;;
+}
+
+.modal_header
+{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+}
+
+.modal_header svg
+{
+    height: 17px;
+}
+
+.modal_close
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    color: #a2a2a2;
+}
+
+.modal_main
+{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+
+    overflow: scroll;
+}
+
+.modal_main::-webkit-scrollbar{
+    display:none;
+}
+
+.modal_main form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal_main form > *
+{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;    
+}
+
+.modal_input div
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal_input input
+{
+    box-sizing: border-box;
+    padding: 0 10px;
+    background-color: transparent;
+    border: 1px solid #e1e2e3;
+    color: #333;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 6px;
+} 
+
+.modal_btn
+{
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    color: white;
+    background-color: #3366ff;
+}
+
+button.modal_disabled
+{
+    color: #d2cfcd;
+    background-color: #f2f4f7;
+    cursor: default;
+}
+
+input.modal_disabled
+{
+    color: #d2cfcd;
+    background-color: #f2f4f7;
+    cursor: default;
+}
+
+.modal_select select
+{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #e1e2e3;
+    color: #333;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    
+    width: 100%;    
+    height: 50px;
+    padding: 0 10px;
+}
+
+.modal_select div
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal_footer
+{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    opacity: .8;
+}
+
+/********* modal_login *************/
+
+
+
+
+.modal_main h1
+{
+    padding-top: 20px;
+    color: black;
+    font-size: 22px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.modal_main h2
+{
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.modal_login_sns_title
+{
+    line-height: 2.0;
+    font-weight: 600;
+}
+
+.modal_login_sns
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_login_sns button > div:nth-child(2)
+{
+    color: #888888;
+    font-size: 10px;
+}
+
+.modal_login_sns svg
+{
+    margin: 0;   
+    width: 56px;
+    height: 56px;
+}
+
+.modal_login_sns button:nth-child(3) svg
+{
+    border: 1px solid #e1e2e3;
+    border-radius: 50%;
+}
+
+.modal_login_contract
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.modal_login_contract a
+{
+    color: #767676;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.modal_login_inc
+{
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.modal_login .modal_lang
+{
+    position: relative;
+}
+
+.modal_login .modal_lang > div
+{
+    border: 1px solid black;
+    position: absolute;
+    top: 7px;
+    left: 35%;
+    width: 21px;
+    height: 14px;
+}
+
+.modal_login .modal_lang > select
+{
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    padding-left: 45px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 140px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+/**********  regi ***********/
+
+.modal_regi_phone_auth
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_regi_phone_auth input
+{
+    width: 60%;
+    margin: 0;
+}
+
+.modal_regi_phone_auth button
+{
+    
+
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    width: 35%;
+    height: 50px;
+    font-size: 16px;
+
+    color: #3366ff;
+    background-color: transparent;    
+}
+
+.modal_regi .modal_regi_pw_info
+{
+    text-align: left;
+
+    font-size: 12px;
+    line-height: 1.428;
+}
+
+.modal_regi_agree_check
+{
+    
+}
+
+.modal_regi_agree_check > div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.modal_regi_agree_check > div > div:first-child
+{
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.modal_regi_agree_check p
+{
+    position: relative;
+    top: 5px;
+}
+
+.modal_regi_agree_check input
+{
+    display: inline;
+    width: 18px;
+    height: 18px;
+}
+
+.modal_agree_all > div > p
+{
+    color:#333;
+    font-weight: 600;
+}

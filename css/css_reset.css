@@ -58,12 +58,13 @@ body
 
     font-family: "Pretendard JP","Pretendard","Pretendard Std",-apple-system,system-ui,"BlinkMacSystemFont","Roboto","Segoe UI",Helvetica,Arial,"Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
     font-weight: bold;
-    color: rgb(102, 102, 102);
+    color: rgb(54,54,54);
 }
 
 a
 {
-    color: rgb(102, 102, 102);
+	font-family: "Pretendard JP","Pretendard","Pretendard Std",-apple-system,system-ui,"BlinkMacSystemFont","Roboto","Segoe UI",Helvetica,Arial,"Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+    color: rgb(54,54,54);
     text-decoration: none;
 }
 
@@ -71,4 +72,18 @@ a
 button
 {
 	background-color: rgb(255, 255, 255);
+	border: 0px;
+	cursor: pointer;
+
+	font-family: "Pretendard JP","Pretendard","Pretendard Std",-apple-system,system-ui,"BlinkMacSystemFont","Roboto","Segoe UI",Helvetica,Arial,"Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+    font-weight: bold;
+    color: rgb(54,54,54);
 }
+
+
+/** used in modal **/
+.hidding
+{
+	display: none;
+}
+

@@ -69,9 +69,13 @@ a
 
 button
 {
-	padding: 0;
-    background-color: white;
-    cursor: pointer;
+	background-color: rgb(255, 255, 255);
+	border: 0px;
+	cursor: pointer;
+
+	font-family: "Pretendard JP","Pretendard","Pretendard Std",-apple-system,system-ui,"BlinkMacSystemFont","Roboto","Segoe UI",Helvetica,Arial,"Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+    font-weight: bold;
+    color: rgb(54,54,54);
 }
 
 .horizontal_wrapper
