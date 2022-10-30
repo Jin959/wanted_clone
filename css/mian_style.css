@@ -240,12 +240,12 @@ main
 
 /************ section2 *****************/
 
-#section2 div.section_title
+#section2 .section_title
 {
     display: flex;
 }
 
-#section2 div.section_title button
+#section2 .section_title button
 {
     padding: 0px;
 }
@@ -255,24 +255,16 @@ main
     padding: 10px 0px;
 }
 
-.scroll_wrapper
-{
-    
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    
-    padding: 30px 0;
-}
 
-.scroll_snap
-{
-    position: relative;
-}
 
-.scroll_snap button:hover
-{
-    background-color: rgb(225, 225, 225);
+
+.horizontal_scroll_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  margin: 30px 0;
 }
 
 .scroll_container
@@ -304,18 +296,49 @@ main
     border-radius: 30px;
 }
 
+.scroll_container button:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+#scroll_prev_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 5%);
+}
+
+#scroll_prev_btn svg {
+  width: 1em;
+  height: 1em;
+  color: #333;
+  background-color: none;
+
+  
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 5%);
+}
+
+#scroll_prev_btn:hover {
+  background-color: rgb(225, 225, 225);
+}
+
 #scroll_nxt_btn
 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0;
+  right: 50px;
 
-    border: 1px solid rgb(225, 225, 225);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 5%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 5%);
 }
 
 
@@ -327,7 +350,11 @@ main
     background-color: none;
 }
 
-#more_btn
+#scroll_nxt_btn:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+#scroll_more_btn
 {
     border: 1px solid rgb(225, 225, 225);
     border-radius: 5px;
@@ -335,6 +362,13 @@ main
     height: 40px;
 
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 5%);
+}
+
+#scroll_more_btn svg {
+  width: 1em;
+  height: 1em;
+  color: #333;
+  background-color: none;
 }
 
 

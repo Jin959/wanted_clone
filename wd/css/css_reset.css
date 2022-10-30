@@ -52,19 +52,19 @@ table {
 /* my begin */
 body
 {
-    font-size: 14px;
-    margin: 0 auto;
+  font-size: 14px;
+  margin: 0 auto;
 
-    font-family: "Pretendard JP","Pretendard","Pretendard Std",-apple-system,system-ui,"BlinkMacSystemFont","Roboto","Segoe UI",Helvetica,Arial,"Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
-    font-weight: bold;
-    color: rgb(102, 102, 102);
+  font-family: "Pretendard JP","Pretendard","Pretendard Std",-apple-system,system-ui,"BlinkMacSystemFont","Roboto","Segoe UI",Helvetica,Arial,"Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
 }
 
 a
 {
-    color: rgb(102, 102, 102);
-    text-decoration: none;
-    cursor: pointer;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 button
@@ -74,25 +74,21 @@ button
 	cursor: pointer;
 
 	font-family: "Pretendard JP","Pretendard","Pretendard Std",-apple-system,system-ui,"BlinkMacSystemFont","Roboto","Segoe UI",Helvetica,Arial,"Apple SD Gothic Neo","Nanum Gothic","Malgun Gothic","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
-    font-weight: bold;
-    color: rgb(54,54,54);
+  font-weight: bold;
+  color: rgb(54,54,54);
 }
 
 .horizontal_wrapper
 {
-    position: relative;
+  position: relative;
 
 	display: flex;
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .vertical_wrapper
 {
-    position: relative;
-    margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
 
-.main_section
-{
-    border: 1px solid rgb(255, 0, 0);
-}

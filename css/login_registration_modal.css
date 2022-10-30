@@ -305,11 +305,6 @@ input.modal_disabled
     line-height: 1.428;
 }
 
-.modal_regi_agree_check
-{
-    
-}
-
 .modal_regi_agree_check > div
 {
     display: flex;

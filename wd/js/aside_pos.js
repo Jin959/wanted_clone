@@ -1,7 +1,7 @@
 const aside = document.querySelector('.aside_section');
 const boundaryEle = document.querySelector('.article_section');
 
-const bnd = boundaryEle.getBoundingClientRect().bottom;
+const bnd = boundaryEle.getBoundingClientRect().bottom + window.scrollY;;
 const initialRight = window.getComputedStyle(aside).getPropertyValue("right");
 const initialTop = window.getComputedStyle(aside).getPropertyValue("right");
 let y = 0;
